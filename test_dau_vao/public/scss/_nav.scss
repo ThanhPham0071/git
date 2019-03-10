@@ -1,0 +1,136 @@
+ @mixin li_1{
+			position: relative;
+			display: block;
+			float:left;
+			list-style: none;
+
+			}
+//menu mobile
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+
+//main menu
+.menu{
+	
+	float: right;
+	.language{
+		height: 38px;
+		font-family: 'HelveticaNeue';
+		float: right;
+
+		ul{
+			margin-top: 8px!important;
+			li{
+				@include li_1;
+				
+				
+				padding: 3px;
+				font-size: 12px;
+				color: #b7b9b5;
+				&:hover>ul{visibility: visible;}
+				ul{
+					position: absolute;
+					left: -40px;
+					top:15px;
+					width: 130px;
+					visibility: hidden;
+					z-index: 999;
+					li{
+						
+						float: none;
+						background-color: #f3f3f3;
+						&:active{ background-color: #fff;}
+					}
+				}
+			}
+		}
+	}
+	.nav{
+		height: 45px;
+		float: right;
+		ul{
+			
+
+			li{
+				
+				//img{ margin-top: 10px;}
+				//&:first-child{ border-bottom: 1px solid #72c02c; color:#72c02c; }
+				//&:last-child{width: 45px;  background-color: #999;}
+				@include li_1;
+				
+				font-weight: 600;
+				font-family: "helvetica";
+				padding-left: 20px;
+				padding-right: 20px;
+				padding-top: 15px;
+				height: 45px;
+				
+				&:hover{border-bottom: 2px solid #72c02c; }
+				span{
+					font-weight: bold;
+					font-size: 10px;
+					padding-left: 5px;
+				}
+
+				&:hover>ul{visibility: visible;}
+				
+				ul{	
+					margin-top: 6px;
+					position: absolute;
+					left: -40px;
+					visibility: hidden;
+					color: #999;
+					z-index: 11;
+					
+					li{
+						&:hover{border-bottom: none;color:#fff;background-color: #7b8387  }
+
+						background-color: #fff;
+						font-weight: normal;
+						font-size: 14px;
+						width: 230px;
+						padding-top: 7px;
+						height: 30px;
+						float: none;
+						border-bottom: 1px solid #f3f3f3;
+						&:active{ background-color: #fff;}
+						&:last-child{ border-bottom: 2px solid #7b8387;}
+					}
+				}
+
+
+			}
+		}
+	}
+}
+
+

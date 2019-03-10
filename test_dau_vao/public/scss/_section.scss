@@ -1,0 +1,71 @@
+@mixin ngang($color){
+
+
+  color: $color;
+  background: $color;
+  border: 0;
+  height: 2px;
+  width: 70px;
+
+}
+
+@mixin le{
+	padding-top: 80px;padding-bottom: 80px;
+
+}
+.container_block{@include le;}
+.member{
+	@include le; 
+	hr{@include ngang(black);}
+	 }
+.ketqua{@include le;
+		hr{color: white;
+		  background: white;
+		  border: 0;
+		  height: 2px;
+		  width: 70px;}
+
+		}
+.banquyen{background-color: #222222; color: white;
+			span{color: #72c02c;}
+			
+}	
+.lienhe{
+	
+	h5{font-weight:normal; font-size: 15px;}
+	h6{ font-weight:normal; font-size: 12px; color:#d7d1d1}
+	padding-top: 50px;padding-bottom: 50px;background-color: #272727;
+	color:white;
+	hr{color: white;
+		  background:#999;
+		  border: 0;
+		  height: 1px;
+		  width: 100%;}
+}
+
+.gioithieu{@include le;
+				hr{
+					@include ngang(black);
+				}}
+.gioithieu2{@include le;
+				hr{
+					@include ngang(black);
+				}}
+.gioithieu3{ @include le; background-color: #f7f7f7;
+			hr{ margin-left: 0px;@include ngang(black);}
+
+		}
+.gioithieu4{@include le;background-color: #f7f7f7;
+				hr{
+					@include ngang(black);
+				}
+			}
+.auto_p{ @include le; background-color: #f7f7f7;
+			hr{ 
+				margin-left: 0px;
+				@include ngang(black);
+
+
+			}
+
+		}	

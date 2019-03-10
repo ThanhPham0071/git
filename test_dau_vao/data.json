@@ -1,0 +1,20 @@
+[
+    {
+        "id": "1",
+        "image": "public/images/read1.jpg",
+        "title": "BUSINESS OPPORTUNITIES",
+        "content": "Donec id elit non mi porta gravida at eget metsit us. Fusce dapibus, justo sit amet risus etiam portapsum generators on the Internet tend to repeat predefined."
+    },
+    {
+        "id": "2",
+        "image": "public/images/read2.jpg",
+        "title": "ENGAGE CUSTOMERS WITH UNIFY",
+        "content": "Donec id elit non mi porta gravida at eget metsit us. Fusce dapibus, justo sit amet risus etiam portapsum generators on the Internet tend to repeat predefined."
+    },
+    {
+        "id": "3",
+        "image": "public/images/read3.jpg",
+        "title": "EMPOWER PEOPLE, HCM ",
+        "content": "Donec id elit non mi porta gravida at eget metsit us. Fusce dapibus, justo sit amet risus etiam portapsum generators on the Internet tend to repeat predefined."
+    }
+]
