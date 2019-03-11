@@ -17,7 +17,6 @@ $(document).ready(function () {
 
 });
 
-
 //Load json
 $(document).ready(function(){
     $.getJSON('data.json', function(data) {
@@ -61,16 +60,10 @@ $(document).ready(function(){
         {
          $('#result').append('<li id="'+value.id+'" class="list-group-item link-class"><img src="'+value.image+'" height="40" width="40" class="img-thumbnail" /> '+value.title+' </li>');
         }
-
-        
-        
-
-         
+  
        });   
       });
      });//hien icon va tieu de
-
-
 
        $('#result').on('click', 'li', function() {
 
@@ -150,8 +143,7 @@ $(window).scroll(function() {
                         $('#projects').animateNumber({ number: 277 },1000);
                         $('#members').animateNumber({ number: 78 },1000);
                         $('#awards').animateNumber({ number: 109 },1000);
-                                
-
+                            
 }
 var a = 0;
         $(window).scroll(function() { 
@@ -172,23 +164,3 @@ function myFunction() {
         x.className = "topnav";
     }
 }
-
-
-
-//<!-- button to top-->
-// When the user scrolls down 20px from the top of the document, show the button
-/*window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        document.getElementById("myBtn").style.display = "block";
-    } else {
-        document.getElementById("myBtn").style.display = "none";
-    }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}*/
